@@ -1,0 +1,23 @@
+
+  .navbar-menu{padding-top: 30px;
+    color: aliceblue;
+    letter-spacing: 1ch;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.navbar-item{ color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: normal;}
+
+p{color: azure;}
+
+body{background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
+
+.h3{
+    color: black;
+}
+
+ .Correo{ display: flex;
+
+}

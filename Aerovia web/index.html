@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+ <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TaxiAerovia </title>
+
+  <!-- < Css Animate > -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- < Bulma Css >-->
+     <link rel="stylesheet" href="assets/css/bulma.css">
+  <!--< Custom Css >-->
+     <link rel="stylesheet" href="assets/css/custom.css">
+  <!--< javascript >-->
+     <script src="assets/js/script.js"></script>
+ <!--< Javascript Animate> -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <!--< SweetAlert2 11.0.0 >-->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js" defer></script>
+  <!--< iconos >-->
+     <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css rel="stylesheet">
+</head>
+
+ <body>
+       <!-- < Navbar > -->
+      <nav class="navbar py-5 ml-5" style="background-color: transparent">
+           <figure class="image is-96x96">
+               <img class="is-rounded" src="assets/logos/logo banner.png" alt="corporate taxi logo">
+           </figure>
+
+           <div class="media-content">
+              <div class="content">
+                    <p class="has-text-justified, mt0"></p>
+                    <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                  </a>
+
+                  <div class="navbar-menu mr-5">
+                      <p class="titulo">
+                          TaxiAerovia
+                      </p>
+
+                      <div class="navbar-end">
+                          <a class="navbar-item" href="index.html">Inicio</a>
+                          <a class="navbar-item" href="#servicios">Servicios</a>
+                          <a class="navbar-item" href="#flota">Flota</a>
+                          <a class="navbar-item" href="contacto.html">Contacto</a>
+                      </div>
+
+                      <a class="navbar-item">
+                          <a class="iconos">
+                              <a href="<https://wa.me/56939338261>"><i class="fa-brands fa-whatsapp fa-2xl mr-1" style="color: #25d366;"></i></a>
+                              <a href="<https://www.facebook.com/TAXIaerovia3?locale=es_ES%2F>"><i class="fa-brands fa-facebook fa-2xl mr-1" style="color: #4267b2;"></i></a>
+                              <a href="<https://www.instagram.com/taxiaerovia/>"><i class="fa-brands fa-instagram fa-2xl mr-1" style="color: #dd2a7b;"></i></a>
+       </nav>
+       <!-- </ Navbar > -->
+
+      <!-- < Script Animaciones > -->
+           <script>
+         AOS.init();
+          </script>
+      <!-- < Script animaciones> -->
+
+    <!-- < section formulario > -->
+   <section class="section is-relative is-clipped mt-6">
+    <div class="is-hidden-touch has-background-link-dark" style="position: absolute; top: 0; left: 1; width: 70%; height: 100%"></div>
+     <div class="is-hidden-desktop is-fullwidth" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"></div>
+     <div class="container mx-auto is-relative">
+        <div class="is-vcentered columns is-multiline">
+            <div class="column is-6 is-5-desktop mb-6">
+
+                <h2 class="has-text-white mb-4 is-size-1 is-size-3-mobile has-text-weight-bold" style="line-height: 48px">TaxiAerovia</h2>
+                <p class="has-text-white mb-0 has-text-weight-bold" style="line-height: 20px">Servicio Premium de taxi oficial Aereopuerto <br><span style="text-decoration: underline white; font-weight: 900">10% de Desc. en tu primer viaje </span></p>
+            </div>
+
+            <div class="column is-6 is-4-desktop mx-auto">
+                <div class="box has-background-light has-text-centered">
+
+
+                    <!-- Formulario de Captura de Datos -->
+
+ <!-- iFrame para que el formulario no redireccione a Google Form  -->
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+   <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSe6qofNGMQ3yYncON2BA0W0tKXccb65728M3JDgzEcCPRiTcQ/formResponse" onsubmit="formSubmitted()" target="hidden_iframe">
+
+      <!-- Título del Formulario -->
+                 <span class="is-size-3 has-text-weight-bold" style="letter-spacing: -1px">Reserva tu Servicio</span>
+
+         <!-- Subtitulo del Formulario -->
+        <h3 class="mb-5 is-size-6 has-text-grey has-text-weight-bold" style="letter-spacing: 0px">Te adjuntamos el Programa en PDF</h3>
+
+
+        <!-- Nombre Completo -->
+           <div class="field">
+              <div class="control">
+                  <!-- Validación HTML: Campo Requerido & Regex para Solo Letras y Espacios  -->
+     <input name="entry.1951395515" class="input" type="text" placeholder="Nombre Completo" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜ\s]+$" title="- Solo Letras y Espacios" value="Juan Perez Astorga">
+   </div>
+ </div>
+
+
+   <!-- Rol Único Nacional ( Chile )  -->
+      <div class="field">
+        <div class="control">
+            <input name="entry.587225814" class="input" type="text" placeholder="Rol Único Nacional ( Chile )" pattern="[0-9]{7,8}-?[0-9Kk]{1}" title="- Ingresa un RUN válido (sin puntos y con guión opcional)" value="10123123-K">
+        </div>
+     </div>
+
+
+    <!-- Correo Electrónico -->
+      <div class="field">
+          <div class="control">
+              <input name="entry.435924262" class="input" type="email" placeholder="Correo Electrónico" title="Ingresa un correo electrónico válido" value="perez.juan.a@gmail.com">
+          </div>
+      </div>
+
+
+      <!-- WhatsApp Chile -->
+     <div class="field">
+          <div class="control">
+              <input name="entry.472676545" class="input" type="text" placeholder="WhatsApp Chile +569" pattern="^\+56\d{9}$" title="Ingresa un número de WhatsApp chileno válido" value="+56912341234">
+          </div>
+      </div>
+
+      <!-- Fecha -->
+    <div class="field">
+         <div class="control">
+             <input name="" class="input" type="date" placeholder="fecha" pattern="dd/mm/yyyy" title="Ingresa Fecha " value="2023-09-18">
+         </div>
+     </div>
+
+     <!-- Hora-->
+      <div class="field">
+          <div class="control">
+              <input name="" class="input" type="time" placeholder="Hora" pattern="hh:mm" title="Ingresa hora de reserva" value="08:00">
+          </div>
+      </div>
+
+       <!--<Selección de Servicio>-->
+     <div class="field">
+       <div class="control">
+           <div class="select is-fullwidth">
+
+               <select required name="entry.106447131">
+
+                   <option value="" disabled  >Selecciona un Servicio</option>
+                   <option value="Servicio 1" selected>Viaje Local</option>
+                   <option value="Servicio 2">Viaje Aeropuerto</option>
+                   <option value="Servicio 3">Empresas</option>
+
+               </select>
+            </div>
+         </div>
+     </div>
+
+
+   <!-- NewsLetter -->
+   <div class="field">
+      <label class="checkbox mb-2">
+          <input name="entry.700608459" class="checkbox mr-2 " type="checkbox" name="terms" value="SI" checked>
+          <small class="has-text-grey-dark">Acepto recibir Promociones y Novedades</small>
+      </label>
+  </div>
+
+  <!-- Botón de Envío -->
+    <button id="button_submit_form" class="button is-link py-2 is-fullwidth" style="font-weight: 700">Reservar Servicio ✉️</button>
+   </form>
+  </section>
+     <!-- < section/formulario >-->
+
+     <!-- < How it Works > -->
+   <section class="section is-relative mt-6">
+      <div class="container">
+
+          <div class="mb-6 pb-3 columns is-multiline is-centered">
+              <div class="column is-8 has-text-centered">
+                  <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold has has-text-white" data-aos="zoom-in-up"> INFORMACION IMPORTANTE </h2>
+                  <p class="subtitle has-text-white"> Planifica tus viajes con antelación para garantizar la disponibilidad de un taxi en el momento oportuno</p>
+              </div>
+          </div>
+
+          <div class="columns is-multiline">
+
+              <div class="column is-6 is-4-desktop mb-5" data-aos="fade-right">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">1</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Reservas y Anticipación </h4>
+                      <p class="subtitle has-text-grey has-text-justified"> Realice reservas con al menos 3 horas de anticipación; coordinación óptima con 1 día de previsión.</p>
+                  </div>
+              </div>
+
+
+              <div class="column is-6 is-4-desktop mb-5">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">2</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Cancelaciones</h4>
+                      <p class="subtitle has-text-grey has-text-justified">Cancelaciones con 2 horas previas; sin prepago, solo se cobra por servicios realizados.
+                      </p>
+                  </div>
+              </div>
+
+
+
+              <div class="column is-6 is-4-desktop mb-5" data-aos="fade-left">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">3</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Medios de Pago </h4>
+                      <p class="subtitle has-text-grey has-text-justified">Aceptamos efectivo, transferencias y tarjetas ; monedas locales y extranjeras; tarifas según distancia.</p>
+                  </div>
+              </div>
+
+
+
+              <div class="column is-6 is-4-desktop mb-5" data-aos="fade-right">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">4</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Transporte de Mascotas</h4>
+                      <p class="subtitle has-text-grey has-text-justified">Informe sobre mascotas al reservar; seguridad con accesorios adecuados.
+                      </p>
+                  </div>
+              </div>
+
+
+
+              <div class="column is-6 is-4-desktop mb-5">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">5</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Capacidad de Vehículos</h4>
+                      <p class="subtitle has-text-grey has-text-justified">4 pasajeros máximo; grupos mayores, informar para vehículo apropiado.</p>
+                  </div>
+              </div>
+
+
+
+              <div class="column is-6 is-4-desktop mb-5" data-aos="fade-left">
+                  <div class="box p-6 is-relative has-background-light has-text-centered">
+                      <span class="has-text-white has-background-primary is-flex is-justify-content-center is-align-items-center" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 48px;height: 48px; border-radius: 50% !important;">6</span>
+                      <h4 class="mb-4 is-size-4 has-text-weight-bold">Tarifas transparentes</h4>
+                      <p class="subtitle has-text-grey has-text-justified">Te proporcionaremos información clara sobre las tarifas antes del viaje.</p>
+                  </div>
+              </div>
+
+
+
+          </div>
+      </div>
+  </section>
+     <!-- < /How it Works > -->
+
+     <!-- < Portfolio > -->
+      <div id="flota"></div>
+     <section class="section">
+       <div class="container">
+           <div class="columns is-multiline is-centered mb-6">
+               <div class="column is-8 has-text-centered">
+                   <p class="is-size-3"> Flota de Vehiculos </p>
+                   <h2 class=" is-size-6 has-text-white mt-7"> Somos Taxi Oficial Aereopuerto Chile</h2>
+                   <h2 class="mt-5 is-size-5 is-size-3-mobile has-text-white has-text-justified ">Descubra nuestra flota de vehículos tipo sedan, la forma
+                                                                     perfecta para realizar viajes nacionales, al aeropuerto de turismo o corporativos.
+                                             Ofrecemos vehículos amplios, eficientes en combustible y elegantes para una experiencia de transporte superior.
+                                                                             </h2>
+               </div>
+           </div>
+
+
+           <div class="mb-6 buttons is-centered">
+               <div class="columns is-multiline">
+
+
+                   <div class="column is-6">
+                       <div class="columns is-multiline">
+                           <div class="column is-6">
+                               <img class="image is-fullwidth" data-aos="fade-down-right" src="assets/img/1.png" alt="">
+                           </div>
+                           <div class="column is-6">
+                               <img class="image is-fullwidth" src="assets/img/2.png" alt="">
+                           </div>
+                           <div class="column is-12">
+                               <img class="image is-fullwidth" src="assets/img/3.png" alt="">
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="column is-6">
+                       <div class="columns is-multiline">
+                           <div class="column is-12">
+                               <img class="image is-fullwidth" src="assets/img/4.png" alt="">
+                           </div>
+                           <div class="column is-6">
+                               <img class="image is-fullwidth" src="assets/img/5.png" alt="">
+                           </div>
+                           <div class="column is-6">
+                               <img class="image is-fullwidth"  data-aos="fade-down-left" src="assets/img/1.png" alt="">
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+           </div>
+   </section>
+     <!-- < / Portafolio > -->
+
+    <!-- < service > -->
+    <div id="servicios"></div>
+    <section class="section">
+     <div class="container">
+         <p class=" is-size-4 has-text-centered mb-6"> Servicios en Santiago </p>
+         <div class="columns is-multiline">
+
+             <div class="column is-6 is-4-desktop mb-5">
+
+                 <div class="is-flex">
+
+                   <span class="mr-4">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                             fill="#00d1b2"></path>
+                       <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
+                     </svg>
+                   </span>
+
+                     <div>
+                         <h4 class="is-size-4 has-text-weight-bold mb-2">Servicios Aereopuerto</h4>
+                         <p class="has-text-weight-semibold has-text-justified">Ofrecemos un servicio de traslados confiable entre el aeropuerto de Santiago y su destino, con tarifas transparentes y preestablecidas. Nuestra prioridad es garantizar la puntualidad, asegurando su llegada a las terminales de embarque de manera precisa y sin contratiempos.</p>
+                     </div>
+                 </div>
+             </div>
+
+
+
+             <div class="column is-6 is-4-desktop mb-5">
+                 <div class="is-flex">
+                   <span class="mr-4">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                             fill="#00d1b2"></path>
+                       <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
+                     </svg>
+                   </span>
+                     <div>
+                         <h4 class="is-size-4 has-text-weight-bold mb-2">Servicios Nacionales</h4>
+                         <p class="has-text-weight-semibold has-text-justified">Realizamos traslados a cualquier destino dentro de Chile, ya sea por motivos de ocio o negocios, adaptándonos a sus necesidades y preferencias de ubicación. Estamos dispuestos a llevarlo exactamente donde requiera estar.</p>
+                     </div>
+                 </div>
+             </div>
+
+
+             <div class="column is-6 is-4-desktop mb-5">
+                 <div class="is-flex">
+                   <span class="mr-4">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                             fill="#00d1b2"></path>
+                       <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
+                     </svg>
+                   </span>
+                     <div>
+                         <h4 class="is-size-4 has-text-weight-bold mb-2">Turismo Servicios</h4>
+                         <p class="has-text-weight-semibold has-text-justified">Ofrecemos servicios personalizados por horas o días para explorar tanto las atracciones turísticas dentro de la ciudad de Santiago como las que se encuentran fuera de ella. Estamos aquí para brindarle una experiencia a medida que le permita descubrir todas las maravillas que estas zonas tienen para ofrecer.</p>
+                     </div>
+                 </div>
+             </div>
+
+
+             <div class="column is-6 is-4-desktop mb-5">
+                 <div class="is-flex">
+                   <span class="mr-4">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M25.6 22.9C25.7 23 25.8 23 26 23H33C33.6 23 34 22.6 34 22C34 21.8 34 21.7 33.9 21.6L30.4 14.6C30.1 14.1 29.5 13.9 29 14.2C28.9 14.3 28.7 14.4 28.6 14.6L25.1 21.6C24.9 22 25.1 22.6 25.6 22.9ZM29.5 17.2L31.4 21H27.6L29.5 17.2ZM18.5 14C16 14 14 16 14 18.5C14 21 16 23 18.5 23C21 23 23 21 23 18.5C23 16 21 14 18.5 14ZM18.5 21C17.1 21 16 19.9 16 18.5C16 17.1 17.1 16 18.5 16C19.9 16 21 17.1 21 18.5C21 19.9 19.9 21 18.5 21ZM22.7 25.3C22.3 24.9 21.7 24.9 21.3 25.3L18.5 28.1L15.7 25.3C15.3 24.9 14.7 24.9 14.3 25.3C13.9 25.7 13.9 26.3 14.3 26.7L17.1 29.5L14.3 32.3C13.9 32.7 13.9 33.3 14.3 33.7C14.7 34.1 15.3 34.1 15.7 33.7L18.5 30.9L21.3 33.7C21.7 34.1 22.3 34.1 22.7 33.7C23.1 33.3 23.1 32.7 22.7 32.3L19.9 29.5L22.7 26.7C23.1 26.3 23.1 25.7 22.7 25.3ZM33 25H26C25.4 25 25 25.4 25 26V33C25 33.6 25.4 34 26 34H33C33.6 34 34 33.6 34 33V26C34 25.4 33.6 25 33 25ZM32 32H27V27H32V32Z"
+                             fill="#00d1b2"></path>
+                       <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
+                     </svg>
+                   </span>
+                     <div>
+                         <h4 class="is-size-4 has-text-weight-bold mb-2">Corportaivo Servicios</h4>
+                         <p class="has-text-weight-semibold has-text-justified"> Usuarios corporativos de empresas en convenio con tarifas especiales y prioridad en la coordinación del servicio.</p>
+                     </div>
+                 </div>
+             </div>
+
+
+         </div>
+     </div>
+ </section>
+    <!-- < /service > -->
+
+     <!--< stats >-->
+    <section class="section">
+      <div class="container">
+    <h2 class="is-size-4 has-text-centered mb-6 has-text-white-ter"> Nuestras Estadísticas </h2>
+
+         <div class="is-vcentered columns is-multiline">
+
+             <div class="column is-6 is-3-desktop mb-5 has-text-centered">
+                 <h3 class="is-size-1 is-size-3-mobile has-text-weight-bold">125</h3>
+                 <p class="has-text-white-bis">Traslados al aeropuerto Santiago</p>
+             </div>
+
+
+             <div class="column is-6 is-3-desktop mb-5 has-text-centered">
+                 <h3 class="is-size-1 is-size-3-mobile has-text-weight-bold">90</h3>
+                 <p class="has-text-white-bis">Traslados locales Santiago</p>
+             </div>
+
+
+             <div class="column is-6 is-3-desktop mb-5 has-text-centered">
+                 <h3 class="is-size-1 is-size-3-mobile has-text-weight-bold">40</h3>
+                 <p class="has-text-white-bis">Traslados Centros Turísticos Santiago</p>
+             </div>
+
+
+             <div class="column is-6 is-3-desktop mb-5 has-text-centered">
+                 <h3 class="is-size-1 is-size-3-mobile has-text-weight-bold">29</h3>
+                 <p class="has-text-white-bis">Servicio de taxi a empresas en Santiago<</p>
+             </div>
+
+         </div>
+
+     </div>
+ </section>
+    <!-- < /stats > -->
+
+     <!-- < Team Company > -->
+    <section class="section">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-8 mb-6 has-text-centered">
+                <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Acerca de Nosotros</h2>
+                <p class="is-size-4 has-text-white has-text-weight-bold"> Disponibles las 24 horas del día para atender cualquier consulta, sugerencia o inconveniente que puedas tener. Tu opinión es valiosa para nosotros.</p>
+            </div>
+        </div>
+
+
+        <div class="columns is-multiline">
+
+
+
+            <div class="column is-6 is-4-desktop mb-4">
+                <div class="box p-6 has-background-light">
+                    <div class="has-text-centered">
+                        <img class="mx-auto mb-5 image" src="assets/img/green-400-avatar.png" alt="" style="width: 80px;height: 80px">
+                        <h4 class="mb-2 is-size-5 has-text-weight-bold has-text-justified">Nuestros conductores están capacitados para brindarte un servicio seguro y cortés. No dudes en comunicarnos tu experiencia</h4>
+                        <p class="has-text-grey">CHOFERES</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="column is-6 is-4-desktop mb-4">
+                <div class="box p-6 has-background-light">
+                    <div class="has-text-centered">
+                        <img class="mx-auto mb-5 image" src="assets/img/green-400-avatar.png" alt="" style="width: 80px;height: 80px">
+                        <h4 class="mb-2 is-size-5 has-text-weight-bold has-text-justified">Priorizamos tu seguridad en cada viaje. Todos nuestros vehículos están equipados con las medidas de seguridad necesarias</h4>
+                        <p class="has-text-grey">SEGURIDAD</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-6 is-4-desktop mb-4">
+                <div class="box p-6 has-background-light">
+                    <div class="has-text-centered">
+                        <img class="mx-auto mb-5 image" src="assets/img/green-400-avatar.png" alt="" style="width: 80px;height: 80px">
+                        <h4 class="mb-2 is-size-5 has-text-weight-bold has-text-justified">Mantenemos nuestros vehículos en óptimas condiciones para garantizar tu comodidad y satisfacción durante el trayecto.</h4>
+                        <p class="has-text-grey">LIMPIEZA</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+     <!-- < /Team Company > -->
+
+      <!-- < Contact > -->
+    <section class="section">
+       <div class="container">
+
+           <div class="columns is-multiline is-centered">
+
+
+               <div class="column is-8 is-6-desktop">
+                   <div class="mx-auto mb-5 has-text-centered">
+                       <span class="is-size-4 has-text-grey-dark">Información General</span>
+                       <h2 class="mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Contactos-Redes</h2>
+                       <p class="is-size-5">Realice reservas con al menos 3 horas de anticipación; confirmación detallada y coordinación óptima con 1 día de previsión.</p>
+                   </div>
+               </div>
+
+
+               <div class="column is-12 is-8-desktop">
+                   <div class="columns is-multiline">
+                       <div class="column is-4 mb-4">
+                           <div class="box py-6 has-background-light has-text-centered " style="height: 100%">
+                               <h3 class="is-size-4 has-text-weight-bold mb-5">Direccion</h3>
+                               <p class="mt-3 mb-1 has-text-grey-darker">Armando Cortinez</p>
+                               <p class="has-text-grey-darker">Pudahuel, Región Metropolitana</p>
+                           </div>
+                       </div>
+
+                       <div class="column is-4 mb-4">
+                           <div class="box py-6 has-background-light has-text-centered" style="height: 100%">
+                               <h3 class="is-size-4 has-text-weight-bold mb-5">Email - Contacto</h3>
+                               <a href="mailto:taxiaerovia@gmail.com"><p class=" mt-3 mb-1 has-text-grey-darker">Taxiaerovia@gmail.com</p></a>
+                               <p class="has-text-grey-darker">Central Taxiaerovia</p>
+                               <a href="https://wa.me/5693933826"><p class="has-text-grey-darker">+56 9 3933 8261</p></a>
+                           </div>
+                       </div>
+
+                       <div class="column is-4-desktop">
+                           <div class="box py-6 has-background-light has-text-centered" style="height: 94%">
+                               <h3 class="is-size-4 has-text-weight-bold mb-5">Redes Sociales</h3>
+                               <div class="is-flex is-justify-content-center is-align-items-center">
+                                   <i class="fa-brands fa-whatsapp fa-2xl mr-1" style="color: #25d366;"></i>
+                                   <i class="fa-brands fa-facebook fa-2xl mr-1" style="color: #4267b2;"></i>
+                               </div>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+     <!-- < /Contact > -->
+
+      <!-- < Footer > -->
+    <footer class="section">
+        <div class="container">
+
+            <div class="columns is-multiline" style="border-bottom: 1px solid #dee2e6;">
+                <div class="column is-3 mb-5">
+
+
+                    <a class="mb-4 ml-5 image is-96x96" href="#">
+                        <img class="is-rounded" src="assets/logos/logo banner.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+                    </a>
+
+                    <p class="has-text-grey-dark mb-6">Taxi Oficial Aereopuerto</p>
+
+
+                    <div>
+                        <a class="mr-3 is-inline-block" href="#">
+                            <img class="mx-auto image is-fullwidth" src="assets/socials/facebook.svg">
+                        </a>
+                        <a class="mr-3 is-inline-block" href="#">
+                            <img class="mx-auto image is-fullwidth" src="assets/socials/instagram.svg">
+                        </a>
+                        <a class="is-inline-block" href="#">
+                            <img class="mx-auto image is-fullwidth" src="assets/socials/twitter.svg">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="column is-9">
+                    <div class="columns is-multiline">
+
+                        <div class="column is-6 is-3-desktop mb-5">
+                            <h4 class="is-size-4 has-text-weight-bold mb-4"> Nosotros</h4>
+                            <ul>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="#"> Login</a></li>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="#"> Registrate</a></li>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="#"> Reclamos</a></li>
+                                <li><a class="button is-link" style="width: 50%; href="#">Contactos</a></li>
+                            </ul>
+                        </div>
+
+                            <div class="column is-6 is-3-desktop mb-5">
+                            <h4 class="is-size-4 has-text-weight-bold mb-4">Servicios</h4>
+                            <ul>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="# ">Tarifas</a></li>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="# "> Condiciones</a></li>
+                                <li class="mb-2"><a class="button is-link" style="width: 50%" href="# ">Pagos</a></li>
+                                <li><a class="button is-link" style="width: 50%" href="#">Consultas</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column is-6 is-3-desktop mb-5">
+                            <h4 class="is-size-4 has-text-weight-bold mb-4 ml-2">TaxiAerovia</h4>
+                            <ul>
+                                <li class="mb-2"><a class="button is-link" href="#">Sobre Nosotros</a></li>
+                                <li class="mb-2"><a class="button is-link" style="width: 62%" href="#">flota</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pt-5 has-text-centered">
+                <p>All rights reserved © Rcid.io</p>
+            </div>
+
+        </div>
+    </footer>
+     <!-- < /Footer > -->
+
+  </body>
+</html>
